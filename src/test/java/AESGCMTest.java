@@ -64,7 +64,7 @@ public class AESGCMTest
     {
         err("start");
 
-        SecureRandom random = SecureRandom.getInstanceStrong();
+        SecureRandom random = SecureRandom.getInstance("NativePRNGNonBlocking");
 
         // Shared secret
         int keySizeBytes = AES_KEY_SIZE / 8;

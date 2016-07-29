@@ -41,7 +41,7 @@ public class StrongSecureRandomTest
     public void test()
             throws Exception
     {
-        SecureRandom random = SecureRandom.getInstanceStrong();
+        SecureRandom random = SecureRandom.getInstance("NativePRNGNonBlocking");
         for (int i = 0; i < 100; i++) {
             err("i = " + i);
             err("random.nextInt() = " + random.nextInt());
