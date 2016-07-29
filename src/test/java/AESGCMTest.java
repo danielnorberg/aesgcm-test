@@ -1,3 +1,4 @@
+import org.junit.Ignore;
 import org.junit.Test;
 
 import javax.crypto.Cipher;
@@ -15,6 +16,7 @@ public class AESGCMTest
     private static final int GCM_NONCE_LENGTH = 12;
     private static final int GCM_TAG_LENGTH = 16;
 
+    @Ignore("debug")
     @Test
     public void testEncryptDecrypt()
             throws Exception
