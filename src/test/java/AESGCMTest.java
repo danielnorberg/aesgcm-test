@@ -8,7 +8,6 @@ import javax.crypto.spec.SecretKeySpec;
 import java.security.SecureRandom;
 
 import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
 
 public class AESGCMTest
 {
